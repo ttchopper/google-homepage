@@ -1,0 +1,382 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+ *    v2.0 | 20110126
+ *       License: none (public domain)
+ *       */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    font: inherit;
+    font-size: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    vertical-align: baseline;
+
+    border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/*
+=================================
+
+Custom styles
+
+=================================
+*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/*
+=================================
+
+Clearfix
+
+=================================
+*/
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+
+    content: '';
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    clear: both;
+    zoom: 1;
+}
+
+
+
+/*
+=================================
+
+Header
+
+=================================
+*/
+
+#primary-header {
+    margin-top: 15px;
+    padding: 0 30px;
+}
+#primary-header nav {
+    float: right;
+
+    width: 301px;
+
+    text-align: right;
+}
+
+#primary-header li {
+    display: inline-block;
+
+    margin-left: 15px;
+
+    vertical-align: middle;
+    /*margin-right: 25px;*/
+}
+
+#user-name {
+    opacity: .5;
+    color: #000;
+}
+
+.google-services {
+    text-decoration: none;
+
+    opacity: .75;
+    color: #000;
+}
+
+.google-services:hover {
+    text-decoration: underline;
+
+    opacity: .85;
+}
+
+.google-user-features {
+    display: block;
+
+    background-image: url(../images/goog_icons.png);
+    background-repeat: no-repeat;
+}
+
+.google-apps {
+    width: 30px;
+    height: 30px;
+
+    opacity: .5;
+    background-position: -132px -38px;
+}
+
+.google-apps:hover {
+    opacity: .8;
+}
+
+.google-notifications {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .5);
+    background-position: -194px -21px;
+}
+
+.google-notifications:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+#user-profile-image {
+    border-radius: 50%;
+}
+
+
+
+/*
+=================================
+
+Main-Content
+
+=================================
+*/
+
+#main-content {
+    padding-top: 150px;
+    padding-bottom: 20px;
+
+    text-align: center;
+}
+
+#main-content input {
+    width: 100%;
+    margin-top: 27px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+
+    border: 1px solid rgba(0, 0, 0, .15);
+}
+
+#main-content input:focus {
+    border: 1px solid #358ffa;
+}
+
+#main-form {
+    position: relative;
+
+    width: 45.66%;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+}
+
+#main-content .voice-search img {
+    position: absolute;
+    top: 35px;
+    right: 8px;
+
+    width: 24px;
+    height: 24px;
+}
+
+#main-content button {
+    font-weight: bold;
+
+    margin-right: 5px;
+    padding: 12px 15px;
+
+    color: rgba(0, 0, 0, .54);
+    border: none;
+    border: 1px solid #f4f4f4;
+    border-radius: 2px;
+    background-color: #f4f4f4;
+}
+
+#main-content button:hover {
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+
+
+
+/*
+=================================
+
+Footer
+
+=================================
+*/
+
+#primary-footer {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    padding: 13px 30px;
+
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    background-color: #f2f2f2;
+}
+
+#primary-footer #left-list {
+    float: left;
+}
+
+#primary-footer #right-list {
+    float: right;
+}
+#primary-footer li {
+    font-size: .9em;
+
+    display: inline-block;
+
+    margin-right: 25px;
+}
+
+#right-list li:last-child {
+    margin-right: 0;
+}
+
+#primary-footer a {
+    text-decoration: none;
+
+    color: rgba(0, 0, 0, .6);
+}
+
+#primary-footer a:hover {
+    text-decoration: underline;
+}
